@@ -5,7 +5,7 @@ int main(void){
 	int op;
 	printf("\nINDIQUE LA CANTIDAD EN PESOS QUE DESEA CONVERTIR");
 	scanf("%d",&n1);
-	printf("\nINDIQUE LA CCONVERCION:");
+	printf("\nINDIQUE LA CONVERCION:");
 printf("\n1)DOLARES\n2)EUROS\n3)YENES\n4)LIBRA\n5)FRANCO SUIZO\n6)REAL");
 scanf("%d",&op);
 switch(op){
