@@ -7,8 +7,8 @@ int main(){
 	scanf("%d",&B);
 	printf("Ingrese el valor de C:");
 	scanf("%d",&C);
-	printf("Indique la comprovaion a realizar:");
-	printf("\n1)A>3\n2)A>C\n3)B!=C\n4)A==3\n5)A*B==15\n6)C/B==-10\n7)A+B+C==5\n8)A+B==8 Y A-B==2\n9)A+B==8 || A-B==6\n10)A>3 Y B>3 Y C<3\n");
+	printf("Indique la comprobacion a realizar:");
+	printf("\n1)A>3\n2)A>C\n3)B!=C\n4)A==3\n5)A*B==15\n6)C/B==-10\n7)A+B+C==5\n8)A+B==8 Y A-B==2\n9)A+B==8 || A-B==6\n10)A>3 Y B>3 Y C<3:\n");
 	scanf("%d",&V);
 	switch(V){
 		
