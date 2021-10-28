@@ -1,47 +1,42 @@
 #include<stdio.h>
 #include<conio.h>
-
+void orden( int num[],int d );
 int main(){
-	
-	int d,a[25]={};
-	int i,j,aux,min,suma=0;
+	int d,num[25]={};
+	for(d=0;d<25;d++){
+	printf("Indica el numero %i:",d+1);
+	scanf("%i",&num[d]);
+	}
+	orden(num,d);
+	getch();
+return 0;
+}
+
+void orden( int num[],int d ){
+int i,j,aux,min,suma=0;
 	float media=0;
 	
-	for(d=0;d<25;d++){
-		printf("%i.Digite un numero:",d+1);
-		scanf("%i",&a[d]);
-	}
-	
 	for(i=0;i<25;i++){
-		min=i;
-		for(j=i+1;j<=25;j++){
-			if(a[j]<a[min]){
-				min=j;		
-				}
-		}
-		aux=a[i];
-		a[i]=a[min];
-		a[min]=aux;
+	min=i;
+	for(j=i+1;j<=25;j++){
+	if(num[j]<num[min]){
+	min=j;		
+	}
+	}
+	aux=num[i];
+	num[i]=num[min];
+	num[min]=aux;
 	}
 	printf("\n");
-	printf("\n");
-	
-	printf("NUMERACION\n");
-	for(i=25;i>=0;i--){
-		printf("%i,",a[i]);
+	printf("Los numeros ordenados son:\n");
+	for(i=25;i>=1;i--){
+		printf("%i  ",num[i]);
 	}
-	
 	printf("\n");
-	printf("\n");
-	
-	printf("MEDIA\n");
+	printf("La media es: \n");
 	for(i=0;i<=25;i++){
-		suma=suma+a[i];
+		suma=suma+num[i];
 		media=suma/25;
-
 	}
-	printf("%f",media);
-	
-	getch();
-	return 0;
+	printf("%.2f",media);
 }
